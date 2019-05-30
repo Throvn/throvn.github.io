@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="icon/png" href="https://cdn2.iconfinder.com/data/icons/essential-circles-1/24/_h-256.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>H A Y A - Documentation</title>
+    <style type="text/css">
+      body{
+        background-color: #342e3d;
+      }
+      .color{
+        color: #78df9f;
+      }
+      .border-color{
+        border-color: #78af9f;
+      }
+      .pcolor{
+        color: #c9c9c9;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      .dropdown-toggle{
+        background: transparent !important;
+        color: #007bff !important;
+      }
+      #navbar-example2{
+        background: transparent !important;
+      }
+      .nav-pills{
+        color: #78df9f !important;
+      }
+      .navbar{
+        border: solid 2px #78af9f !important;
+      }
+      .nav-link{
+        color: #78df9f !important;
+      }
+    </style>
+  </head>
+  <body style="background-image: url(https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-ide-graphic-e0af0e76eb1f2c1bb70037d5d22da9ae.svg); background-repeat: repeat-y; background-size: 500px 1250px;">
+    <h1 class="text-center my-5 text-light" style="font-family: gotham rounded; font-size: 60px;"><span class="color">H</span> <span style="color: #ffd152;"> A</span><span style="color: #c13f21;"> Y</span><span style="color: #659cc8;"> A</span> - Documentation</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm float-right">
+          <nav id="navbar-example2" class="navbar navbar-light bg-light rounded">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#button">Button</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#textarea">Textarea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#checkbox">Checkbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#radio">Radio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#typing">Typing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Input</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#inputnormal">Normal Input</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#inputbutton">Input Buttons</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        
+<div class="alert alert-warning mt-3" role="alert">
+  For now H A Y A is not working at Internet Explorer
+</div>
+
+<div class="card text-white bg-success mt-3">
+  <div class="card-header">Embed Code:</div>
+  <div class="card-body">
+    <p class="card-text">Just copy and paste this line at the end of your body tag.
+      <input style="width: 100%; background-color: transparent; border: none;" value="<script src='http://www.throvn.bplaced.net/Script/sounds/soundsInJs.js' > </script>"></p>
+  </div>
+</div>
+
+<div class="card text-white bg-warning mb-3 mt-3">
+  <div class="card-header">Change Sounds:</div>
+  <div class="card-body">
+    <h5 class="card-title">How to change </h5>
+    <p class="card-text">
+      <ol>
+      <li>Look in the documentation which <em>var</em>
+      you want to change
+      </li>
+      <li>Then change the sound by writing: <pre>
+     audio = new Audio('//path');</pre></li>
+      <ul class="">
+        <li>(or you change the path directly in the  <em>soundsInJs.js</em>  File)</li>
+      </ul>
+      <li>Done</li>
+    </ol></p>
+  </div>
+</div>
+
+<div class="card text-white bg-danger mb-3">
+  <div class="card-header">Change Volume</div>
+  <div class="card-body">
+    <h5 class="card-title">How to change</h5>
+    <p class="card-text">
+      <ol>
+      <li>Look in the documentation of which <em>var</em>
+      you want to adjust
+      </li>
+      <li>After that look in the documentation which level the <em>volume</em>
+      has now
+      </li>
+      <li>Then change the sound by writing: <pre>
+     audio.volume = 0.2;</pre></li>
+      <ul class="">
+        <li>(or you change the path directly in the  <em>soundsInJs.js</em>  File)</li>
+      </ul>
+      <li>Done</li>
+    </ol>
+    </p>
+  </div>
+</div>
+
+
+            <div id="button" class="card border-dark my-5">
+              <div class="card-header">Buttons</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio1
+    Volume:        0.2</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+//button click
+
+var button = document.getElementsByTagName('button');
+for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", function(){
+      var audio1 = new Audio('./library/btn_click.mp3');
+      audio1.volume = 0.2;
+      audio1.play();
+  });
+}</pre>
+Test<br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<button type="button">Button</button>
+              </div>
+            </div>
+
+            <div id="link" class="card border-dark my-5">
+              <div class="card-header">Link</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio2
+    Volume:        0.3</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+// (a) link click
+
+var a = document.getElementsByTagName('a');
+for (var i = 0; i < a.length; i++) {
+  a[i].addEventListener("click", function(){
+      var audio2 = new Audio('./library/a_click.mp3');
+      audio2.volume = 0.3;
+      audio2.play();
+  });
+}</pre>
+Test<br>
+<a href="#">Link </a><a href="#">Link </a><a href="#">Link</a>
+              </div>
+            </div>
+
+            <div id="textarea" class="card border-dark my-5">
+              <div class="card-header">Textarea</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">Same sound as the Input fields + typingsounds</h5>
+                <p class="card-text"></p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio5
+    Volume:        0.8</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+// textarea click
+
+var textarea = document.getElementsByTagName('textarea');
+for (var i = 0; i < textarea.length; i++) {
+  textarea[i].addEventListener("click", function(){
+      var audio5 = new Audio('./library/input_click.mp3');
+      audio5.volume = 0.8;
+      audio5.play();
+  });
+}</pre>
+Test<br>
+<textarea class="type_sou" rows="1" style="width: 100%;"></textarea>
+              </div>
+            </div>
+
+            <div id="checkbox" class="card border-dark my-5">
+              <div class="card-header">Checkbox</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">You hear the sound every time you click</h5>
+                <p class="card-text"></p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio6
+    Volume:        0.1</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+// checkbox click
+
+var checkbox = document.querySelectorAll('input[type=checkbox]');
+for (var i = 0; i < checkbox.length; i++) {
+    checkbox[i].addEventListener("click", function(){
+        var audio6 = new Audio('./library/checkbox_click.mp3');
+        audio6.volume = 0.1;
+        audio6.play();
+    });
+}</pre>
+Test<br>
+<form>
+  <input type="checkbox" name="1">Check
+  <input type="checkbox" name="1">Check
+  <input type="checkbox" name="1">Check
+</form>
+              </div>
+            </div>
+
+            <div id="radio" class="card border-dark my-5">
+              <div class="card-header">Input Radio</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">You hear the sound every time you click</h5>
+                <p class="card-text"></p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio8
+    Volume:        0.1</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+// radio buttons click
+var radio = document.querySelectorAll('input[type=radio]');
+for (var i = 0; i < radio.length; i++) {
+    radio[i].addEventListener("click", function(){
+        var audio8 = new Audio('./library/radio_click.mp3');
+        audio8.volume = 0.1;
+        audio8.play();
+    });
+}</pre>
+Test<br>
+<form>
+<input type="radio" name="1"> Select
+<input type="radio" name="1"> Select
+<input type="radio" name="1"> Select
+
+</form>
+              </div>
+            </div>
+
+            <div id="typing" class="card border-dark my-5">
+              <div class="card-header">Typing sounds</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">You can hear the typingsounds if you write in an input e.g.</h5>
+                <p class="card-text"></p>
+                <h4>Information:</h4>
+                <p>This sound can be pretty annoying sometimes, so I decided to remove it as the default...<br> If you want to hear the typing sounds you have to add the class:<em class="bg-warning rounded"> type_sou </em> to your input.</p>
+                Information:
+                <pre>
+    Eventlistener: keydown
+    Variable:      audio9
+    Volume:        1</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+//typing sounds
+
+var type = document.querySelectorAll('.type_sou');
+for (var i = 0; i < type.length; i++) {
+  type[i].addEventListener("keydown", function(){
+    var rand = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
+    var audio9 = new Audio('./library/typing/typing'+rand+'.mp3');
+    audio9.play();
+  });
+}</pre>
+Test<br>
+<input class="type_sou" type="text" style="width: 100%;">
+              </div>
+            </div>
+
+            <div id="inputnormal" class="card border-dark my-5">
+              <div class="card-header">Normal Inputs</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">Normal Input Types are:</h5> text, search, date, datetime-local, email, month, number, password, tel, time, url, week, color
+                <h4>Information:</h4>
+                <p class="card-text">Typingsound is disabled</p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio3
+    Volume:        0.8</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+// input fields click
+
+var input = document.querySelectorAll('input[type=text],input[type=search],input[type=date],input[type=datetime-local],input[type=email],input[type=month],input[type=number],input[type=password],input[type=tel],input[type=time],input[type=url],input[type=week],input[type=color]');
+for (var i = 0; i < input.length; i++) {
+  input[i].addEventListener("click", function(){
+      var audio3 = new Audio('./library/input_click.mp3');
+      audio3.volume = 0.8;
+    audio3.play();
+  });
+}</pre>
+Test<br>
+<input type="text" value="text">
+<input type="search" value="search">
+<input type="date" value="date">
+<input type="datetime-local" value="datetime-local">
+<input type="email" value="email">
+<input type="month" value="month">
+<input type="number" value="number">
+<input type="password" value="password">
+<input type="tel" value="tel">
+<input type="time" value="time">
+<input type="url" value="url">
+<input type="week" value="week">
+<input type="color" value="color">
+              </div>
+            </div>
+
+            <div id="inputbutton" class="card border-dark my-5">
+              <div class="card-header">Input Buttons</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">Input Button Types are:</h5>
+                <p class="card-text">submit, reset, button, range</p>
+                Information:
+                <pre>
+    Eventlistener: Click
+    Variable:      audio4
+    Volume:        0.2</pre>
+                Code:
+                <pre class="rounded" style="background-color: lightgrey;">
+// input buttons click
+
+var input_btn = document.querySelectorAll('input[type=submit],input[type=reset],input[type=button],input[type=range]');
+for (var i = 0; i < input_btn.length; i++) {
+  input_btn[i].addEventListener("click", function(){
+      var audio4 = new Audio('./library/btn_click.mp3');
+      audio4.volume = 0.2;
+    audio4.play();
+  });
+}</pre>
+Test<br>
+<input type="button" value="button">
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+<input type="range" value="range">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #25212c;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6 text-light">
+             <h2 class="my-4">Open Source</h2>
+             <ul class="list-unstyled">
+               <li>HAYA is open source.</li>
+               <li>Praise or criticism is always welcome.</li>
+               <li>If you want to help improving please write to tagnacht2@gmail.com</li>
+             </ul>
+          </div>
+          <div class="col-6 text-light">
+             <h2 class="my-4">Other Links</h2>
+             <ul class="list-unstyled">
+               <li><a href="index.html">Back to HAYA page?</a></li>
+               <li><a href="embed.html">How to embed</a></li>
+               <li><a href="/">Back to my Homepage</a></li>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="soundsInJs.js"></script>
+  </body>
+</html>
