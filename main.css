@@ -1,0 +1,23 @@
+.overlay {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://getuikit.com/images/section-background.svg)
+}
+.content {
+    background: #1a1a1a;
+    width: 80%;
+    height: 80%;
+}
+.about-me {
+    position: fixed;
+    overflow: scroll;
+    height: 80vh;
+}
+.profile-container {
+    border-width: 30px; border-color: #1a1a1a !important; border-style: solid;
+}
+a:hover {
+    transition: .3s;
+    color: #4592af !important;
+}
