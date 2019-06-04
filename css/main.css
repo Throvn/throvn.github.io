@@ -1,0 +1,38 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    background-color: rgb(237, 237, 239)
+}
+.no-decorations:hover {
+    text-decoration: none;
+}
+.bg-hover {
+    transition: .2s;
+}
+.bg-hover:hover {
+    transition: .2s;
+    background: #d5d5d7;
+    cursor: pointer;
+}
+.profile-big {
+    border: none;
+    background-color: transparent;
+}
+#last-name {
+    font-size: 5rem;
+    font-family: 'Lora', serif;
+}
+#job {
+    color: rgb(61, 139, 199);
+}
+.icon-side {
+    border: solid 2px lightgray;
+}
+.heading-side {
+    background-color: rgb(237, 237, 239);
+    font-weight: bolder;
+}
+.stroke-side {
+    margin: -15px; border-width: 2px;
+}

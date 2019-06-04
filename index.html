@@ -1,79 +1,153 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Louis Stanko</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
-</head>
-<body style="background: #262626; margin: 0;">
-    <div class="overlay">
-        <div class="content container-fluid text-white my-auto">
-            <div class="row" style="height: 100%; overflow: scroll;">
-                <div class="col-3 about-me p-4 text-center border-right">
-                    <img width="300" src="./img/me-circle.png" alt="A photo of myself">
-                    <h1 class="m-2" style="font-size: 55px;">Louis Stanko</h1>
-                    <h3>STUDENT</h3>
-                    <div class="row m-5">
-                        <div class="col-12">
-                            <div class="profile-container rounded-circle d-inline">
-                                <img class="rounded-circle" width="80" src="./img/profile_hi_res.png" alt="">
-                            </div>
-                            <hr style="background-color: white; margin-top: -40px;">
-                            <div class="row pt-5">
-                                <div class="col-12">
-                                        Hi there, I am Louis, a 16-year-old web developer, who always likes to learn. At the moment my personal interests is in fullstack webapplication development (NodeJS, React) and mobile application development (React Native, Java)
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fonts.css"> 
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Louis Stanko - Repositories</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row my-5 px-5">
+            <div class="col-lg-4 text-center pr-5 border-right">
+                <img class="img-thumbnail profile-big" width="250" src="./img/me-circle.png" alt="A photo of myself">
+                <br><br>
+                <h2>Louis Tim</h2>
+                <h1 id="last-name">Stanko</h1>
+                <h5 id="job">STUDENT</h5>
+                <br>
+                <i class="icon-side far fa-address-card h1 p-3 rounded-circle"></i>
+                <br>
+                <span class="heading-side h3 px-3">Profile</span>
+                <hr class="stroke-side">
+                <p class="pt-5">
+                    Hi there, I am Louis, a 16-year-old web developer, who always likes to learn. At the moment my personal interests are in fullstack webapplication development (NodeJS, React) and mobile application development (React Native, Java)
+                </p>
+                <br>
+                <i class="icon-side fas fa-certificate h1 p-3 rounded-circle"></i>
+                <br>
+                <span class="heading-side h3 px-3">Certificates</span>
+                <hr class="stroke-side">
+                <div class="pt-5">
+                    <a class="text-dark no-decorations" href="https://www.udemy.com/certificate/UC-5VIXX6IJ/" target="_blank" rel="noopener noreferrer">
+                        <div class="border rounded p-2 bg-hover mb-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <span>Automate the Boring Stuff with Python Programming</span>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-thumbnail" src="./img/udemy.png" alt="Udemy Logo">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="offset-4 col-8">
-                    <div class="row" >
-                            <div class="col-12 pt-5">
-                                    <h1 class="text-center">Demos</h1>
-                                    <hr style="background-color: white; width: 80%;">
-                                <ul style="font-size: 30px; width: 100%;">
-                                    <li><a class="text-white" style="text-decoration: underline;" href="https://www.github.com/Throvn/chat-app">Chat-app</a> (<a href="https://throvn-chat-app.herokuapp.com">Demo</a>)
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>Pretty self-explanatory, written in JS with express.js. The GUI however was made using HTML and CSS.</li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="text-white" style="text-decoration: underline;" href="https://www.github.com/Throvn/pong">Pong</a> (<a href="./pong/">Demo</a>)
-                                        <ul>
-                                            <li>JavaScript</li>
-                                            <li>This is pong for the browser.</li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="text-white" style="text-decoration: underline;" href="https://www.github.com/Throvn/hangman">Hangman</a> (<a href="./hangman/public/">Demo</a>)
-                                        <ul>
-                                            <li>JavaScript</li>
-                                            <li>A simple frontend hangman webapp.</li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="text-white" style="text-decoration: underline;" href="https://www.github.com/Throvn/haya">Haya</a> (<a href="./haya/">Demo</a>)
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>A one day front-end website just for fun.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <h1 class="text-center">Other Repositories</h1>
-                                <hr style="background-color: white; width: 80%;">
-                                <ul id="repos" style="font-size: 30px; width: 100%;">
-                                </ul>
+                    </a>
+
+                    <a class="text-dark no-decorations" href="https://www.udemy.com/certificate/UC-SIWXZYGZ/" target="_blank" rel="noopener noreferrer">
+                        <div class="border rounded p-2 bg-hover mb-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <span>The Complete Node.js Developer Course</span>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-thumbnail" src="./img/udemy.png" alt="Udemy Logo">
+                                </div>
                             </div>
                         </div>
+                    </a>
+
+                    <a class="text-dark no-decorations" href="https://www.udemy.com/certificate/UC-RANVVGS3/" target="_blank" rel="noopener noreferrer">
+                        <div class="border rounded p-2 bg-hover mb-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <span>Computer Science 101: Master the Theory Behing Programming</span>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-thumbnail" src="./img/udemy.png" alt="Udemy Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="text-dark no-decorations" href="https://www.udemy.com/certificate/UC-U8N3S427/" target="_blank" rel="noopener noreferrer">
+                        <div class="border rounded p-2 bg-hover mb-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <span>The Modern JavaScript Bootcamp</span>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-thumbnail" src="./img/udemy.png" alt="Udemy Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="prijects-tab">
+                    <h1>Projects & Demos</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card">
+                                <a href="https://github.com/Throvn/pong"><video class="card-img-top" src="./img/PongExample.mp4" autoplay loop alt="Pong Example"></video></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pong - The Game</h5>
+                                    <p class="card-text">This is pong for the browser.</p>
+                                    <a href="./demos/pong/index.html" class="btn btn-primary">Go to demo</a>
+                                </div>
+                                </div>
+                                <br>
+                            <div class="card">
+                                    <a href="https://github.com/Throvn/hangman"><video class="card-img-top" src="./img/HangmanExample.mp4" autoplay loop alt="Hangman Example"></video></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hangman - The Game</h5>
+                                    <p class="card-text">A simple frontend hangman webapp.</p>
+                                    <a href="./demos/hangman/index.html" class="btn btn-primary">Go to demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <a href="https://github.com/Throvn/chat-app"><img class="card-img-top" src="./img/chatExample.png" alt="Chat Example"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Chat App</h5>
+                                    <p class="card-text">Pretty self-explanatory, written in JS with express.js. The GUI however was made using HTML and CSS.</p>
+                                    <a href="https://throvn-chat-app.herokuapp.com/" class="btn btn-primary">Go to demo</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                    <a href="https://github.com/Throvn/haya"><img class="card-img-top" src="./img/hayaExample.png" alt="Haya Example"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Haya - Pure Frontend</h5>
+                                        <p class="card-text">A one day front-end website just for fun.</p>
+                                        <a href="./demos/haya/index.html" class="btn btn-primary">Go to demo</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h1 class="d-inline-block">Other Repositories</h1>
+                    <hr>
+                    <div class="row">
+                        <div id="reposL" class="col-lg-6 mb-4">
+                        </div>
+                        <div id="reposR" class="col-lg-6">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-</body>
+    <!-- jQuery first, then moment.js, then Custom JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
