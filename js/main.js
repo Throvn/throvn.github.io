@@ -4,7 +4,7 @@ fetch("https://api.github.com/users/throvn/repos").then((data) => {
     }).then((data) => {
         let arr = [];
         data.forEach((el) => {
-            if(el.name === 'TravelingSalesman' || el.name === 'throvn.github.io' || el.name === 'react-navigation' || el.name === 'chat-app' || el.name === 'pong' || el.name === 'hangman' || el.name === 'haya') return;
+            if(el.name === 'TravelingSalesman' || el.name === 'throvn.github.io' || el.name === 'chat-app' || el.name === 'pong' || el.name === 'hangman' || el.name === "rushhour-browser") return;
             let content = 'no content'
             switch (el.language) {
                 case 'JavaScript':
