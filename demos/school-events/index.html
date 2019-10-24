@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>School Events - Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <style>
+
+    </style>
+</head>
+<body style="background-color: #fafafa;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100vh">
+        <div class="row">
+            <div class="col-8">
+                <img src="./qRZm6CIDi.png" style="width: 90%;" alt="" srcset="">
+            </div>
+            <div class="col-md-4">
+                <h1 style="font-weight: 300;">School Events App</h1>
+                <span style="font-weight: 200;">by <a href="../../index.html" target="_blank" rel="noopener noreferrer">Louis Stanko</a></span>
+                <br>
+                <br>
+                <p style="font-weight: 100;">Hier findest du die verschieden Versionen für die jeweiligen Betriebssyteme. Um <span style="text-decoration: line-through;"><a href="#sendNotification">Push-Benachrichtigungen</a> für iOS implementieren zu können</span> <span style="text-decoration: underline;">auch nur 1 Zeile für iOS schreiben zu können</span> benötigt man allerdings einen sogenannten iOS-Developer-Account, der 100$ im JAHR kostet (so reich bin ich dann auch wieder nicht). Push-Benachrichtigungen für Android funktionieren allerdings. Teste die App am besten auf beiden Platformen vorher und sag mir dann bescheid was ich verbessern soll. </p>
+                <a class="btn btn-light mb-2" download="School Events android" href="./app-release.apk">Download for Android</a>
+                <a class="btn btn-light mb-2" href="./fuck-apple.html"><strike>Download for iOS</strike></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h2 style="font-weight: 200">Details</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 style="font-weight: 100; text-decoration: underline;">iOS Build</h4>
+                        <p style="font-weight: 200;">
+                                Build: <span style="color: green;">passing</span>
+                                <br>
+                                <h5 style="font-weight: 100;">Funktionen:</h5>
+                                <ul style="font-weight: 100; list-style-type: none;">
+                                    <li><input type="checkbox" checked disabled> Details view</li>
+                                    <li><input type="checkbox" checked disabled> Location access</li>
+                                    <li><input type="checkbox" checked disabled> Viewing Events (adding/removing in real time)</li>
+                                    <li><input type="checkbox" checked disabled> Check if connected with WIFI</li>
+                                    <li style="text-decoration: line-through;"><input type="checkbox" disabled> Realtime Push Notifications </li>
+                                    
+                                </ul>
+                            </p>
+                    </div>
+                    <div class="col-md-6">
+                            <h4 style="font-weight: 100; text-decoration: underline;">Android Build</h4>
+                            <p style="font-weight: 200;">
+                                Build: <span style="color: green;">passing</span>
+                                <br>
+                                <h5 style="font-weight: 100;">Funktionen:</h5>
+                                <ul style="font-weight: 100; list-style-type: none;">
+                                    <li><input type="checkbox" checked disabled> Details view</li>
+                                    <li><input type="checkbox" checked disabled> Location access</li>
+                                    <li><input type="checkbox" checked disabled> Viewing Events (adding/removing in real time)</li>
+                                    <li><input type="checkbox" checked disabled> Check if connected with WIFI</li>
+                                    <li><input type="checkbox" checked disabled> Realtime Push Notifications</li>
+                                    
+                                </ul>
+                            </p>
+                    </div>
+                    <div class="col">
+                            <hr>
+                            <h2 style="font-weight: 200">Informationen zu der Admin Console</h2>
+                            <span style="font-weight: 200;">die du hier findest: <a href="https://school-events.herokuapp.com/" target="_blank" rel="noopener noreferrer">https://school-events.herokuapp.com/</a></span>
+                            <p style="font-weight: 100;">
+                                Das <b>Passwort</b> ist: thST24 <br>
+                                Einmal eingeloggt, siehst du alle Infos auf einen Blick.
+                                <h4 style="font-weight: 200; text-decoration: underline;">Die MongoDB Console</h4>
+                                <p style="font-weight: 100;">
+                                    ... ist nur dazu da um zu überprüfen, ob ein Event welches vorher mit dem <a href="#createEvent">Add Event</a> (oder <a href="#removeEvent">Remove Event</a>) Button erstellt wurde auch wirklich in der Datenbank gespeichert wurde.
+                                    Bei jedem ersten einloggen mit in die Admin Console sollte dort so etwas wie: <span class="bg-dark p-1 rounded text-light">8:22:22 PM: <span style="color: green;">Database connected.</span></span> stehen. In anderen Fällen wird das gesamte System nicht laufen, da die Verbindung zur Datenbank gestört ist. (Kontaktier mich dann am besten)
+                                </p>     
+                                <h4 style="font-weight: 200; text-decoration: underline;">Die User Console</h4>
+                                <p style="font-weight: 100;">
+                                    ... ist nur für die Informatik-Gurus da. Lass dich von der nicht irritieren (nein wirklich jetzt). Auf die musst du nicht achten.
+                                    <h6 style="font-weight: 200;">Die Anzeigen bedeuten folgendes:</h6>
+                                    <ol style="font-weight: 200;">
+                                        <li class="mb-2">
+                                            <span class="bg-dark p-1 rounded text-light">
+                                                <span style="font-weight: bold;">
+                                                    6:22:22 PM: 
+                                                </span> 
+                                                <span style="color: green;">
+                                                    4wd8...AAA
+                                                </span> 
+                                                requested 
+                                                <span style="color: orange; font-weight: bold;"> 
+                                                    data 
+                                                </span> 
+                                                at position ["undefined location"]
+                                            </span>
+                                            : 
+                                            <br>
+                                            Heißt nichts anderes, als das ein Gerät die Informationen aus der Datenbank beziehen möchte. Die <em>undefined location</em> ist noch zu sehen, da ich noch keine feste Geolocation einbauen wollte (sonst könnte man nur von bestimmten Koordinaten auf die Daten zugreifen).
+                                        </li>
+                                        <li class="mb-2">
+                                            <span class="bg-dark p-1 rounded text-light">
+                                                    <span style="font-weight: bold;">6:22:22 PM: </span> <span style="color: green;">4wd8...AAA</span> <span style="color: darkgreen; font-weight: bold;"> recived </span> all data
+                                            </span>
+                                            : 
+                                            <br>
+                                            Bedeutet, dass das Gerät (das eben die Daten angefordert hat) die Daten bekommen hat.
+                                        </li>
+                                        <li class="mb-2">
+                                            <span class="bg-dark p-1 rounded text-light">
+                                                    <span style="font-weight: bold;">6:43:24 PM: </span> <span style="color: green;">4wd8...AAA</span> joined the <span style="color: red; font-weight: bold;"> Admin Room </span>
+                                                    </span>
+                                                    :
+                                                    <br>
+                                                    Meint, dass sich ein weiterer Nutzer in der Admin Console befindet. Dies kann ein zweiter Tab sein, der geöffnet ist, oder ein anderes Gerät. Ich würde immer empfehlen nur einen Tab gleichzeitig offen zu haben. Damit die Warnung überhaupt erst angezeigt wird, muss sich der <em>"zweite Nutzer"</em> auch mit dem richtigen Passwort angemeldet haben.
+                                            </span>
+                                        </li>
+                                        <li class="mb-2">
+                                            <span class="bg-dark p-1 rounded text-light">
+                                                    <span style="font-weight: bold;">6:43:32 PM: </span> <span style="color: green;">4wd8...AAA</span> <span style="color: blue; font-weight: bold;"> left </span> because of <em><span style="font-weight: bold;">transport close</span></em>
+                                                    </span>
+                                                    :
+                                                    <br>
+                                                    Heißt, dass ein Nutzer die Verbindung zum Server abgebrochen/geschlossen hat. Sprich er hat die App geschlossen. Push-Benachrichtigungen werden allerdings immer noch angezeigt.
+                                            </span>
+                                        </li>
+                                    </ol>
+                                </p>  
+                                <h4 style="font-weight: 200; text-decoration: underline;">Connections (real-time)</h4>
+                                <p style="font-weight: 100;">Müsste relativ selbsterklärend sein. Zeigt wie viele Geräte gerade mit dem Server verbunden sind (inclusive der Admin Console).</p>
+
+                                <h4 style="font-weight: 200; text-decoration: underline;">Event List</h4>
+                                <p style="font-weight: 100;">Zeigt eine Liste aller Events an. Klickt man auf ein Event, so kann man im nachhinein bereits bestehende Events ändern. Alle Attribute sind veränderbar bis auf den Titel (wenn man diesen verändern will muss man ein neues Event erstellen und das alte löschen). Die Veränderung wird nicht live geupdated sondern tritt erst in Erscheinung, wenn die App neu geöffnet wird.</p>
+
+                                <h4 style="font-weight: 200; text-decoration: underline;" id="createEvent">Add Event</h4>
+                                <p style="font-weight: 100;">Der Add Event Button öffnet ein Fenster, dass dir ein Formular bereitstellt. Alle Felder sind <span style="text-decoration: underline;">pflicht</span>. Das Feld Icon zeigt hinterher ein Icon in der App an, um dem Benutzer das suchen nach beispielsweise Auftritten zu vereinfachen (music: <i class="fa fa-music" title="Edit"></i>) </p>
+
+                                <h4 style="font-weight: 200; text-decoration: underline;" id="removeEvent">Remove Event</h4>
+                                <p style="font-weight: 100;">Dieser Button löscht das vorher ausgewählte Event.</p>
+
+                                <h4 style="font-weight: 200; text-decoration: underline;" id="sendNotification">Send Notification</h4>
+                                <p style="font-weight: 100;">Der Knopf öffnet ein Fenster, mit dem man Push-Nachrichten verfassen und senden kann. Momentan kommen diese aber nur bei Android Geräten an. Für iOS braucht man (wie oben schon geschrieben) einen Developer-Account, der 100$ im Jahr kostet. Wenn man diesen hat, kann man allerdings die App auch im Appstore hochladen. Momentan müsste die App noch von der Website heruntergeladen werden.</p>
+
+                                <h4 style="font-weight: 200; text-decoration: underline;">Hilfe, alles explodiert!!!</h4>
+                                <p style="font-weight: 100;">Die Events doppeln und verdreifachen sich, was soll ich tun? Einfach einmal den Tab neu laden (Windows: <span class="bg-dark text-light rounded p-1">F5</span>, Mac: <span class="bg-dark text-light rounded p-1">⌘ + R</span>).</p>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="d-inline-block">
+                        This project was made with <span style="text-decoration: line-through;">stress</span>
+                        <i class="fa fa-heart align-center"></i>
+                    </p>
+                </div>
+                <div class="col text-center">
+                        <a href="https://www.github.com/Throvn">
+                            <i class="fa fa-github"></i> Louis Stanko
+                        </a>
+                </div>
+                <div class="col text-right">
+                    <p>
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
