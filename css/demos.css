@@ -1,0 +1,76 @@
+.controls {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#red {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #c72c41;
+}
+
+#yellow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ffd800;
+}
+
+#green {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #4dd599;
+}
+
+
+@keyframes rubberBandExpand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    100% {
+      transform: scale3d(2, 0.75, 1);
+    }
+}
+
+@keyframes rubberBandSnap {
+    from {
+        transform: scale3d(1.5, 0.85, 1);
+    }
+  
+    15% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    25% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+.rubberBandExpand {
+    animation-name: rubberBandSnap;
+    
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+}
+
+.rubberBandExpand:active {
+    animation-name: rubberBandExpand;
+    animation-iteration-count: 1;
+}
