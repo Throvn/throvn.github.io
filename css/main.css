@@ -32,7 +32,21 @@ body {
 .heading-side {
     background-color: rgb(237, 237, 239);
     font-weight: bolder;
+    margin-bottom: 0;
+    display: inline-block;
 }
 .stroke-side {
-    margin: -15px; border-width: 2px;
+    margin: -16px;
+    border-width: 2px;
+}
+
+.bdr-right {
+    border-right: #d5d5d7 1px solid;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .bdr-right {
+        border-right: none;
+    }
 }
