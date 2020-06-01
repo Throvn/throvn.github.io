@@ -18,6 +18,8 @@ body {
 .profile-big {
     border: none;
     background-color: transparent;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 #last-name {
     font-size: 5rem;
