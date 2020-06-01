@@ -3,13 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/rushhour_icon.png" type="image/png">
     <title>Rushhour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="../../css/codicons/codicon.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150046344-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150046344-1');
+    </script>
 </head>
 <body>
     <div class="settings" style="position: fixed;">
-        <a onclick="document.getElementById('header').innerText = 'Settings'; document.getElementsByClassName('modal')[0].classList = 'modal show';"><img src="images/cog-solid.png" style="background-color: white; width: 45px; height: 45px; padding: 5px;" alt="settings"></a>
+        <a onclick="document.getElementById('header').innerText = 'Settings'; document.getElementsByClassName('modal')[0].classList = 'modal show';">
+            <i class="codicon codicon-settings" style="font: normal normal normal 46px/1 codicon; padding: 20px;"></i>
     </div>
     <div class="moves">
         <h1 class="font">Moves: <span id="move">0</span></h1>
