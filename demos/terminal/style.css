@@ -1,17 +1,76 @@
-  .window-content::-webkit-scrollbar {
+.window-content::-webkit-scrollbar {
     width: 12px;
-  }
-  .window-content::-webkit-scrollbar-track {
+}
+
+.window-content::-webkit-scrollbar-track {
     background: transparent;
-  }
-  .window-content::-webkit-scrollbar-thumb {
+}
+
+.window-content::-webkit-scrollbar-thumb {
     background-color: #1a1b1f;
-    border-bottom-right-radius: .25rem;
-  }
+    border-bottom-right-radius: 0.25rem;
+}
 
 body {
     background-color: #2b2e4a;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Fmacos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2020-2560x1440-1455.jpg&f=1&nofb=1");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0;
+}
+
+.topbar {
+    background-color: #1517186b;
+    color: white;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+}
+
+.nav-item {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: default;
+}
+
+.nav-item:hover {
+    background-color: #ffffff32;
+    border-radius: .25rem;
+}
+
+.nav-item:first-child {
+    margin-left: 3px;
+}
+
+.nav-item:nth-child(2) {
+    font-weight: bold;
+}
+
+.nav-item:last-child {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-item:last-child {
+    background-color: transparent;
+}
+
+div#time {
+    text-align: right;
+    width: 100%;
+}
+
+.text-reset {
+    color: white;
+    text-decoration: none;
 }
 
 h5 {
@@ -26,7 +85,7 @@ a {
 
 code {
     background-color: #bbbfca;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     color: black;
     padding: 5px;
 }
@@ -38,25 +97,25 @@ code {
 #window {
     height: 400px;
     background-color: #151718;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 
     display: flex;
     flex-direction: column;
-    
+
     position: absolute;
 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    -webkit-box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
 }
 
 .window-header {
     padding: 10px;
-    border-radius: .3rem .3rem 0 0;
+    border-radius: 0.3rem 0.3rem 0 0;
 
     cursor: move;
 
@@ -108,7 +167,7 @@ code {
 
 .window-content {
     padding: 0 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     color: white;
 
     display: flex;
@@ -149,7 +208,7 @@ code {
 
     height: 18px;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     color: white;
 
     outline: none;
@@ -189,31 +248,30 @@ code {
     }
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 600px) {
     #window {
         position: absolute;
         width: 600px;
     }
 }
 
-
 /* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
     margin-bottom: 10px;
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
     visibility: hidden;
 
     background-color: #3a4750;
     color: #fff;
     text-align: center;
     padding: 5px 10px;
-    border-radius: .25rem;
-   
+    border-radius: 0.25rem;
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
@@ -224,21 +282,21 @@ code {
 
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+}
 
-  .tooltip .tooltiptext::after {
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    top: 0%; /* At the bottom of the tooltip */
+    top: 0%;
+    /* At the bottom of the tooltip */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: #151718 transparent transparent transparent;
-  }
-
+}
